@@ -1,35 +1,25 @@
-#include <stdio.h>
+#include <stdio.h>   
 #include <stdlib.h>
+#include <conio.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main() {
 
-	int kg;
-	printf("Kilogrami giriniz =");
-	scanf("%d",&kg);
-
-	if (kg<=0)
+int main()
+{
+	int i=0;
+	int length=0;
+	char word[10000];
+	
+	printf("Kelime giriniz =");
+	gets(word);
+	
+	char *p = word;
+	
+	for (;p[i] !='\0';i++)
 	{
-	printf("Hata!");
+		length++;
 	}
-	else if(kg>100)
-	{
-	printf("Fazla agir");
-	}
-	else
-	{
-		if (kg%2==0)
-		{
-			printf("YES");
-		}
-
-		else
-		{
-			printf("NO");
-		}
-	}
-
-	return 0;
+    printf("%d",length);
+    return 0;
 }
 
