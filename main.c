@@ -15,7 +15,7 @@ int main() {
 	}
 	else if(kg>100)
 	{
-	printf("Fazla aðýr");
+	printf("Fazla agir");
 	}
 	else
 	{
